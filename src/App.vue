@@ -2,8 +2,6 @@
   <div class="app-container">
     <h1 class="title">Female Experience Survey</h1>
     <div class="survey-box">
-      <!-- Your survey content will go here -->
-      <p></p>
     </div>
     <button>Next</button>
   </div>
