@@ -2,18 +2,22 @@
   <div class="app-container">
     <h1 class="title">Female Experience Survey</h1>
     <div class="survey-box">
+      <SurveyContainer />
     </div>
-    <button>Next</button>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'SurveyLayout'
-}
+import SurveyContainer from '@/components/Survey/SurveyContainer.vue'
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  components: { SurveyContainer }
+})
 </script>
 
 <style scoped>
+/* keep your existing styles */
 .app-container {
   display: flex;
   flex-direction: column;
@@ -46,12 +50,5 @@ export default {
   padding: 30px;
   box-sizing: border-box;
   overflow-y: auto;
-}
-
-.survey-box p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #666;
-  margin: 0;
 }
 </style>
